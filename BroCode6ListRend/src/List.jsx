@@ -34,4 +34,8 @@ export default List
 //hello here we have done some changes for the list and mapping
 // and sorting the list
 // and also added the key prop to the list items
+<<<<<<< HEAD
 // hi
+=======
+// this this great actually like commenting the code
+>>>>>>> 9a335d7872465da3a5870529ba80f6d86d35fdfd
