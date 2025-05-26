@@ -9,11 +9,21 @@ const getBmi = (height, weight) => {
 }
 
 const BmiCalculator = () => {
-  const [height, setHeight] = useState(170)
-  const [weight, setWeight] = useState(60)
+  const storedHeight =
+    JSON.parse(localStorage.getItem('height')) == ''
+      ? JSON.parse(localStorage.getItem('height'))
+      : 170
+  const storedWeight =
+    JSON.parse(localStorage.getItem('weight')) == ''
+      ? JSON.parse(localStorage.getItem('weight'))
+      : 70
+  const [height, setHeight] = useState(storedHeight)
+  const [weight, setWeight] = useState(storedWeight)
 
   useEffect(() => {
     document.title = `Your BMI: ${getBmi(height, weight)}`
+    localStorage.setItem('height', JSON.stringify(height))
+    localStorage.setItem('weight', JSON.stringify(weight))
   })
 
   const onIncrementWeight = () => {
