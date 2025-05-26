@@ -11,3 +11,6 @@ export default App
 //
 // const App = () => {
 //   return
+//     <div className="app-container">
+//       <h1 className="heading">BMI Calculator</h1>
+//       <BmiCalculator />

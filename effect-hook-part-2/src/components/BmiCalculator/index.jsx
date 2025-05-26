@@ -108,3 +108,7 @@ const BmiCalculator = () => {
 }
 
 export default BmiCalculator
+// // Hello Hi I am Pranay
+// // import React from 'react'
+// // import './App.css'
+// Helllloooo
