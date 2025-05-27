@@ -1,6 +1,12 @@
 import './index.css'
+import {useEffect, useState} from 'react'
 
 const Leaderboard = () => {
+  useEffect(() => {
+    const url = 'https://apis.ccbp.in/leaderboard'
+    const respone = await fetch(url)
+  const responseData = await respone.json()})
+
   const renderLeaderboardHeader = () => (
     <li className="leaderboard-header">
       <p className="table-heading rank">Rank</p>
