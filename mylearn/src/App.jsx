@@ -1,6 +1,6 @@
-import Header from './Header.jsx'
+import ProfileCard from './Header.jsx'
 function App() {
-  return <Header></Header>
+  return <ProfileCard></ProfileCard>
 }
 
 export default App
