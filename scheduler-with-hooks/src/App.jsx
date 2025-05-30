@@ -5,12 +5,16 @@ import './App.css'
 
 const App = () => {
   const [isMounted, setIsMounted] = useState(true)
+  const onToggleClock = () => {
+    setIsMounted(prevIsMounted => !prevIsMounted)
+  }
+
   return (
     <div className="app-container">
       <button type="button" className="toggle-btn" onClick={onToggleClock}>
-        Hide Clock
+        {isMounted ? 'Hide Clock' : 'Show Clock'}
       </button>
-      <Clock />
+      {isMounted && <Clock />}
     </div>
   )
 }
