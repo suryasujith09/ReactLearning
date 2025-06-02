@@ -1,0 +1,40 @@
+{
+  "test_case_results": [
+    {
+      "test_case_id": "RJSCP0G6V8_TEST_1",
+      "evaluation_result": "INCORRECT",
+      "title": "Page should initially consist of HTML main heading element with text content as \"Count 0\"",
+      "errorMessages": [
+        "Unable to find an accessible element with the role \"heading\" and name `/Count 0/i`\n\nHere are the accessible roles:\n\n  heading:\n\n  Name \"Counter\":\n  \u001b[36m<h1\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"heading\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  --------------------------------------------------\n  paragraph:\n\n  Name \"\":\n  \u001b[36m<p\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"count\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  --------------------------------------------------\n  button:\n\n  Name \"Increase\":\n  \u001b[36m<button\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  Name \"Decrease\":\n  \u001b[36m<button\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  --------------------------------------------------\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div>\u001b[39m\n    \u001b[36m<div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\"container\"\u001b[39m\n    \u001b[36m>\u001b[39m\n      \u001b[36m<h1\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"heading\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[0mCounter\u001b[0m\n      \u001b[36m</h1>\u001b[39m\n      \u001b[36m<p\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"count\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[0m0\u001b[0m\n      \u001b[36m</p>\u001b[39m\n      \u001b[36m<div>\u001b[39m\n        \u001b[36m<button\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n        \u001b[36m>\u001b[39m\n          \u001b[0mIncrease\u001b[0m\n        \u001b[36m</button>\u001b[39m\n        \u001b[36m<button\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n        \u001b[36m>\u001b[39m\n          \u001b[0mDecrease\u001b[0m\n        \u001b[36m</button>\u001b[39m\n      \u001b[36m</div>\u001b[39m\n    \u001b[36m</div>\u001b[39m\n  \u001b[36m</div>\u001b[39m\n\u001b[36m</body>\u001b[39m"
+      ]
+    },
+    {
+      "test_case_id": "RJSCP0G6V8_TEST_2",
+      "evaluation_result": "CORRECT",
+      "title": "Page should consist of HTML button element with text content as \"Increase\"",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCP0G6V8_TEST_3",
+      "evaluation_result": "CORRECT",
+      "title": "Page should consist of HTML button element with text content as \"Decrease\"",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCP0G6V8_TEST_4",
+      "evaluation_result": "INCORRECT",
+      "title": "When the Increase button is clicked, then the count should be incremented by one",
+      "errorMessages": [
+        "Unable to find an accessible element with the role \"heading\" and name `/Count 1/i`\n\nHere are the accessible roles:\n\n  heading:\n\n  Name \"Counter\":\n  \u001b[36m<h1\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"heading\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  --------------------------------------------------\n  paragraph:\n\n  Name \"\":\n  \u001b[36m<p\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"count\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  --------------------------------------------------\n  button:\n\n  Name \"Increase\":\n  \u001b[36m<button\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  Name \"Decrease\":\n  \u001b[36m<button\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  --------------------------------------------------\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div>\u001b[39m\n    \u001b[36m<div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\"container\"\u001b[39m\n    \u001b[36m>\u001b[39m\n      \u001b[36m<h1\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"heading\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[0mCounter\u001b[0m\n      \u001b[36m</h1>\u001b[39m\n      \u001b[36m<p\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"count\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[0m1\u001b[0m\n      \u001b[36m</p>\u001b[39m\n      \u001b[36m<div>\u001b[39m\n        \u001b[36m<button\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n        \u001b[36m>\u001b[39m\n          \u001b[0mIncrease\u001b[0m\n        \u001b[36m</button>\u001b[39m\n        \u001b[36m<button\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n        \u001b[36m>\u001b[39m\n          \u001b[0mDecrease\u001b[0m\n        \u001b[36m</button>\u001b[39m\n      \u001b[36m</div>\u001b[39m\n    \u001b[36m</div>\u001b[39m\n  \u001b[36m</div>\u001b[39m\n\u001b[36m</body>\u001b[39m"
+      ]
+    },
+    {
+      "test_case_id": "RJSCP0G6V8_TEST_5",
+      "evaluation_result": "INCORRECT",
+      "title": "When the Decrease button is clicked, then the count should be decremented by one",
+      "errorMessages": [
+        "Unable to find an accessible element with the role \"heading\" and name `/Count -1/i`\n\nHere are the accessible roles:\n\n  heading:\n\n  Name \"Counter\":\n  \u001b[36m<h1\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"heading\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  --------------------------------------------------\n  paragraph:\n\n  Name \"\":\n  \u001b[36m<p\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"count\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  --------------------------------------------------\n  button:\n\n  Name \"Increase\":\n  \u001b[36m<button\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  Name \"Decrease\":\n  \u001b[36m<button\u001b[39m\n    \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n  \u001b[36m/>\u001b[39m\n\n  --------------------------------------------------\n\nIgnored nodes: comments, script, style\n\u001b[36m<body>\u001b[39m\n  \u001b[36m<div>\u001b[39m\n    \u001b[36m<div\u001b[39m\n      \u001b[33mclass\u001b[39m=\u001b[32m\"container\"\u001b[39m\n    \u001b[36m>\u001b[39m\n      \u001b[36m<h1\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"heading\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[0mCounter\u001b[0m\n      \u001b[36m</h1>\u001b[39m\n      \u001b[36m<p\u001b[39m\n        \u001b[33mclass\u001b[39m=\u001b[32m\"count\"\u001b[39m\n      \u001b[36m>\u001b[39m\n        \u001b[0m-1\u001b[0m\n      \u001b[36m</p>\u001b[39m\n      \u001b[36m<div>\u001b[39m\n        \u001b[36m<button\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n        \u001b[36m>\u001b[39m\n          \u001b[0mIncrease\u001b[0m\n        \u001b[36m</button>\u001b[39m\n        \u001b[36m<button\u001b[39m\n          \u001b[33mclass\u001b[39m=\u001b[32m\"button\"\u001b[39m\n        \u001b[36m>\u001b[39m\n          \u001b[0mDecrease\u001b[0m\n        \u001b[36m</button>\u001b[39m\n      \u001b[36m</div>\u001b[39m\n    \u001b[36m</div>\u001b[39m\n  \u001b[36m</div>\u001b[39m\n\u001b[36m</body>\u001b[39m"
+      ]
+    }
+  ]
+}
