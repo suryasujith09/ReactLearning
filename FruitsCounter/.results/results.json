@@ -1,0 +1,60 @@
+{
+  "test_case_results": [
+    {
+      "test_case_id": "RJSCPOXW0B_TEST_1",
+      "evaluation_result": "INCORRECT",
+      "title": "Page should initially consist of HTML main heading element with text content as \"Bob ate 0 mangoes 0 bananas\"",
+      "errorMessages": [
+        "Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `App`."
+      ]
+    },
+    {
+      "test_case_id": "RJSCPOXW0B_TEST_2",
+      "evaluation_result": "INCORRECT",
+      "title": "Page should consist of HTML image element with alt attribute value as \"mango\"",
+      "errorMessages": [
+        "Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `App`."
+      ]
+    },
+    {
+      "test_case_id": "RJSCPOXW0B_TEST_3",
+      "evaluation_result": "INCORRECT",
+      "title": "Page should consist of HTML image element with alt attribute value as \"banana\"",
+      "errorMessages": [
+        "Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `App`."
+      ]
+    },
+    {
+      "test_case_id": "RJSCPOXW0B_TEST_4",
+      "evaluation_result": "INCORRECT",
+      "title": "Page should consist of HTML button element with text content as \"Eat Banana\"",
+      "errorMessages": [
+        "Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `App`."
+      ]
+    },
+    {
+      "test_case_id": "RJSCPOXW0B_TEST_5",
+      "evaluation_result": "INCORRECT",
+      "title": "Page should consist of HTML button element with text content as \"Eat Mango\"",
+      "errorMessages": [
+        "Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `App`."
+      ]
+    },
+    {
+      "test_case_id": "RJSCPOXW0B_TEST_6",
+      "evaluation_result": "INCORRECT",
+      "title": "When the \"Eat Mango\" button is clicked, the count of the mangoes eaten should be incremented by one",
+      "errorMessages": [
+        "Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `App`."
+      ]
+    },
+    {
+      "test_case_id": "RJSCPOXW0B_TEST_7",
+      "evaluation_result": "INCORRECT",
+      "title": "When the \"Eat Banana\" button is clicked, the count of the bananas eaten should be incremented by one",
+      "errorMessages": [
+        "Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `App`."
+      ]
+    }
+  ]
+}
