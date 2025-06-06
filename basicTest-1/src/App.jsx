@@ -1,32 +1,16 @@
-import React from 'react'
-import {BrowserRouter as BrowserRouter, Routes, Route} from 'react-router-dom'
-import InputPage from './Compontents/inputPage.jsx'
-import DisplayPage from './DisplayPage'
-function App() {
+import {Routes, Route, BrowserRouter} from 'react-router'
+import Firstpage from './Compontents/FirstPage.jsx'
+import Displaypage from './Compontents/DisplayPage.jsx'
+
+const App = () => {
   return (
     <>
-      <header>
-        <nav>
-          <ul>
-            <li>
-              <a href="/">InputPage</a>
-            </li>
-            <li>
-              <a href="/">DisplayPage</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <div>
-        <input id="input" type="text"></input>
-      </div>
-
-      <browserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<InputPage />} />
-          <Route path="/display" element={<DisplayPage />} />
+          <Route path="/Firstpage" element={<Firstpage />} />
+          <Route path="/Displaypage" element={<Displaypage />} />
         </Routes>
-      </browserRouter>
+      </BrowserRouter>
     </>
   )
 }

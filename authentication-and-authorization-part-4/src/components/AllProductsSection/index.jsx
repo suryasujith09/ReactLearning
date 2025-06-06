@@ -1,10 +1,14 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
+import Cookies from 'js-cookie'
+import BeatLoader from 'react-spinners/BeatLoader'
 
 import ProductCard from '../ProductCard'
 import './index.css'
 
 const AllProductsSection = () => {
   const [productsList, setProductsList] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
+
   useEffect(() => {
     const getProducts = async () => {
       const apiUrl = 'https://apis.ccbp.in/products'
@@ -27,6 +31,7 @@ const AllProductsSection = () => {
           rating: product.rating,
         }))
         setProductsList(formattedData)
+        setIsLoading(false)
       }
     }
     getProducts()
@@ -44,8 +49,13 @@ const AllProductsSection = () => {
       </div>
     )
   }
+  const renderLoader = () => (
+    <div className="loading-container">
+      <BeatLoader color="#7032a5" />
+    </div>
+  )
 
-  return <>{renderProductsList()}</>
+  return <>{isLoading ? renderLoader() : renderProductsList()}</>
 }
 
 export default AllProductsSection

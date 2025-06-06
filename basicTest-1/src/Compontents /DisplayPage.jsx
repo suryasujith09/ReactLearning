@@ -1,7 +1,9 @@
-// function DisplayPage() {
-//   // const [text, setText] = useState('')
-//   console.log({inputvalue})
-//   return <></>
-// }
-
-// export default DisplayPage
+const Displaypage = () => {
+  const field = localStorage.getItem('input')
+  return (
+    <>
+      <p>{field}</p>
+    </>
+  )
+}
+export default Displaypage

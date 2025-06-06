@@ -1,13 +1,13 @@
-import {useState} from 'react'
+import {useEffect} from 'react'
+import Cookies from 'js-cookie'
 
 import ProductCard from '../ProductCard'
 import './index.css'
 
-const AllProductsSection = () => {
-  const [productsList, setProductsList] = useState([])
+const PrimeDealsSection = () => {
   useEffect(() => {
-    const getProducts = async () => {
-      const apiUrl = 'https://apis.ccbp.in/products'
+    const getPrimeDeals = async () => {
+      const apiUrl = 'https://apis.ccbp.in/prime-deals'
       const jwtToken = Cookies.get('jwt_token')
       const options = {
         headers: {
@@ -18,7 +18,7 @@ const AllProductsSection = () => {
       const response = await fetch(apiUrl, options)
       if (response.ok === true) {
         const fetchedData = await response.json()
-        const formattedData = fetchedData.products.map(product => ({
+        const formattedData = fetchedData.prime_deals.map(product => ({
           title: product.title,
           brand: product.brand,
           price: product.price,
@@ -26,18 +26,17 @@ const AllProductsSection = () => {
           imageUrl: product.image_url,
           rating: product.rating,
         }))
-        setProductsList(formattedData)
       }
     }
-    getProducts()
+    getPrimeDeals()
   }, [])
 
-  const renderProductsList = () => {
+  const renderPrimeDealsList = () => {
     return (
-      <div>
-        <h1 className="products-list-heading">All Products</h1>
+      <div className="products-list-container">
+        <h1 className="primedeals-list-heading">Exclusive Prime Deals</h1>
         <ul className="products-list">
-          {productsList.map(product => (
+          {primeDealsData.map(product => (
             <ProductCard productData={product} key={product.id} />
           ))}
         </ul>
@@ -45,7 +44,7 @@ const AllProductsSection = () => {
     )
   }
 
-  return <>{renderProductsList()}</>
+  return <>{renderPrimeDealsList()}</>
 }
 
-export default AllProductsSection
+export default PrimeDealsSection
