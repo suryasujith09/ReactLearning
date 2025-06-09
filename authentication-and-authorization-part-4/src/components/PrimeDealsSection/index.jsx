@@ -3,11 +3,13 @@ import Cookies from 'js-cookie'
 
 import ProductCard from '../ProductCard'
 import './index.css'
+const AllProductsSection = () => {
+  const [productsList, setProductsList] = useState([])
+  const [isLoading, setIsLoading] = useState(true)
 
-const PrimeDealsSection = () => {
   useEffect(() => {
-    const getPrimeDeals = async () => {
-      const apiUrl = 'https://apis.ccbp.in/prime-deals'
+    const getProducts = async () => {
+      const apiUrl = 'https://apis.ccbp.in/products'
       const jwtToken = Cookies.get('jwt_token')
       const options = {
         headers: {
@@ -18,7 +20,7 @@ const PrimeDealsSection = () => {
       const response = await fetch(apiUrl, options)
       if (response.ok === true) {
         const fetchedData = await response.json()
-        const formattedData = fetchedData.prime_deals.map(product => ({
+        const formattedData = fetchedData.products.map(product => ({
           title: product.title,
           brand: product.brand,
           price: product.price,
@@ -26,9 +28,11 @@ const PrimeDealsSection = () => {
           imageUrl: product.image_url,
           rating: product.rating,
         }))
+        setProductsList(formattedData)
+        setIsLoading(false)
       }
     }
-    getPrimeDeals()
+    getProducts()
   }, [])
 
   const renderPrimeDealsList = () => {
