@@ -12,3 +12,4 @@ const ProtectedRoute = ({children}) => {
 export default ProtectedRoute
 
 //hello thius i s protected route
+// this is a protected route component that checks for a JWT token in cookies
