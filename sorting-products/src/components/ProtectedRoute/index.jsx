@@ -10,3 +10,5 @@ const ProtectedRoute = ({children}) => {
 }
 
 export default ProtectedRoute
+
+//hello thius i s protected route
