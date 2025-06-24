@@ -1,4 +1,4 @@
-import ProfileCard from './Header.jsx'
+import ProfileCard from './ProfileCard.jsx'
 function App() {
   return <ProfileCard></ProfileCard>
 }
